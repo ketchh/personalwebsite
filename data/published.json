@@ -1,0 +1,811 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-29T00:00:00.000Z",
+  "defaultLanguage": "it",
+  "languages": [
+    "it",
+    "en",
+    "fr"
+  ],
+  "site": {
+    "intro": {
+      "greeting": "hello",
+      "wordsList": [
+            " world",
+            " anon",
+            " user",
+            " stranger",
+            " admin",
+            " system",
+            " friend",
+            " guest",
+            " entity",
+            " neo",
+            " pilot",
+            " ghost",
+            " shell"
+      ]
+    },
+    "ui": {
+      "translations": {
+        "it": {
+          "introHint": "Cosa ti porta qui?",
+          "heroCommand": "",
+          "patchSelectorLabel": "patch mode",
+          "patchDirectionLabel": "direction",
+          "patchSpeedLabel": "speed",
+          "patchGranularity": {
+            "line": {
+              "short": "riga",
+              "long": "riga per riga"
+            },
+            "word": {
+              "short": "word",
+              "long": "word by word"
+            },
+            "char": {
+              "short": "lettera",
+              "long": "lettera per lettera"
+            }
+          },
+          "patchDirection": {
+            "forward": {
+              "short": "normale",
+              "long": "dall'inizio alla fine"
+            },
+            "reverse": {
+              "short": "reverse",
+              "long": "from end to start"
+            }
+          },
+          "patchSpeedPresets": {
+            "1": {
+              "short": "rapida",
+              "long": "piu veloce"
+            },
+            "2": {
+              "short": "normale",
+              "long": "velocita normale"
+            },
+            "3": {
+              "short": "slow",
+              "long": "slower"
+            },
+            "4": {
+              "short": "molto lenta",
+              "long": "molto piu lenta"
+            }
+          },
+          "statusLeft": "[F1] resume [F2] blog [F3] resources",
+          "statusRight": "translation::ready"
+        },
+        "en": {
+          "introHint": "What brings you here?",
+          "heroCommand": "",
+          "patchSelectorLabel": "patch mode",
+          "patchDirectionLabel": "direction",
+          "patchSpeedLabel": "speed",
+          "patchGranularity": {
+            "line": {
+              "short": "line",
+              "long": "line by line"
+            },
+            "word": {
+              "short": "word",
+              "long": "word by word"
+            },
+            "char": {
+              "short": "char",
+              "long": "letter by letter"
+            }
+          },
+          "patchDirection": {
+            "forward": {
+              "short": "forward",
+              "long": "from start to end"
+            },
+            "reverse": {
+              "short": "reverse",
+              "long": "from end to start"
+            }
+          },
+          "patchSpeedPresets": {
+            "1": {
+              "short": "fast",
+              "long": "faster"
+            },
+            "2": {
+              "short": "normal",
+              "long": "normal speed"
+            },
+            "3": {
+              "short": "slow",
+              "long": "slower"
+            },
+            "4": {
+              "short": "very slow",
+              "long": "much slower"
+            }
+          },
+          "statusLeft": "[F1] resume [F2] blog [F3] resources",
+          "statusRight": "translation::ready"
+        },
+        "fr": {
+          "introHint": "Qu'est-ce qui vous amène ici ?",
+          "heroCommand": "",
+          "patchSelectorLabel": "mode patch",
+          "patchDirectionLabel": "direction",
+          "patchSpeedLabel": "vitesse",
+          "patchGranularity": {
+            "line": {
+              "short": "ligne",
+              "long": "ligne par ligne"
+            },
+            "word": {
+              "short": "mot",
+              "long": "mot par mot"
+            },
+            "char": {
+              "short": "lettre",
+              "long": "lettre par lettre"
+            }
+          },
+          "patchDirection": {
+            "forward": {
+              "short": "normal",
+              "long": "du début à la fin"
+            },
+            "reverse": {
+              "short": "inverse",
+              "long": "de la fin au début"
+            }
+          },
+          "patchSpeedPresets": {
+            "1": {
+              "short": "rapide",
+              "long": "plus rapide"
+            },
+            "2": {
+              "short": "normale",
+              "long": "vitesse normale"
+            },
+            "3": {
+              "short": "lente",
+              "long": "plus lente"
+            },
+            "4": {
+              "short": "très lente",
+              "long": "beaucoup plus lente"
+            }
+          },
+          "statusLeft": "[F1] CV [F2] blog [F3] ressources",
+          "statusRight": "translation::ready"
+        }
+      }
+    },
+    "sectionChooser": {
+      "translations": {
+        "it": {
+          "path": "./entrypoint",
+          "number": "00",
+          "question": "Cosa ti porta qui?",
+          "identity": "",
+          "prompt": "",
+          "choices": [
+            {
+              "key": "resume",
+              "number": "01",
+              "label": "Curriculum",
+              "copy": "CV, esperienze, formazione, contatti e PDF scaricabile.",
+              "path": "#/resume"
+            },
+            {
+              "key": "blog",
+              "number": "02",
+              "label": "Blog",
+              "copy": "Spazio pronto per post e appunti pubblici, ancora vuoto.",
+              "path": "#/blog"
+            },
+            {
+              "key": "resources",
+              "number": "03",
+              "label": "Risorse",
+              "copy": "GitHub, file locali, PDF e risorse da linkare.",
+              "path": "#/resources"
+            }
+          ]
+        },
+        "en": {
+          "path": "./entrypoint",
+          "number": "00",
+          "question": "What brings you here?",
+          "identity": "",
+          "prompt": "",
+          "choices": [
+            {
+              "key": "resume",
+              "number": "01",
+              "label": "Resume",
+              "copy": "CV, experience, education, contacts, and downloadable PDF.",
+              "path": "#/resume"
+            },
+            {
+              "key": "blog",
+              "number": "02",
+              "label": "Blog",
+              "copy": "A ready space for public posts and notes, still empty.",
+              "path": "#/blog"
+            },
+            {
+              "key": "resources",
+              "number": "03",
+              "label": "Resources",
+              "copy": "GitHub, local files, PDF, and resources to link.",
+              "path": "#/resources"
+            }
+          ]
+        },
+        "fr": {
+          "path": "./entrypoint",
+          "number": "00",
+          "question": "Qu'est-ce qui vous amène ici ?",
+          "identity": "",
+          "prompt": "",
+          "choices": [
+            {
+              "key": "resume",
+              "number": "01",
+              "label": "CV",
+              "copy": "CV, expériences, formation, contacts et PDF téléchargeable.",
+              "path": "#/resume"
+            },
+            {
+              "key": "blog",
+              "number": "02",
+              "label": "Blog",
+              "copy": "Un espace prêt pour les articles et notes publiques, encore vide.",
+              "path": "#/blog"
+            },
+            {
+              "key": "resources",
+              "number": "03",
+              "label": "Ressources",
+              "copy": "GitHub, fichiers locaux, PDF et ressources à lier.",
+              "path": "#/resources"
+            }
+          ]
+        }
+      }
+    },
+    "summarySection": {
+      "translations": {
+        "it": {
+          "path": "./summary",
+          "number": "01",
+          "title": "Summary"
+        },
+        "en": {
+          "path": "./summary",
+          "number": "01",
+          "title": "Summary"
+        },
+        "fr": {
+          "path": "./summary",
+          "number": "01",
+          "title": "Résumé"
+        }
+      }
+    },
+    "emptyStates": {
+      "blog": {
+        "translations": {
+          "it": {
+            "number": "06",
+            "path": "./blog",
+            "title": "Blog",
+            "eyebrow": "published-only",
+            "heading": "Blog in preparazione",
+            "meta": "nessun articolo pubblico esportato",
+            "copy": "Gli articoli compariranno qui solo quando saranno pubblicati in parallelo multilingue."
+          },
+          "en": {
+            "number": "06",
+            "path": "./blog",
+            "title": "Blog",
+            "eyebrow": "published-only",
+            "heading": "Blog is being prepared",
+            "meta": "no public article exported",
+            "copy": "Articles will appear here only after they are published in parallel multilingual versions."
+          },
+          "fr": {
+            "number": "06",
+            "path": "./blog",
+            "title": "Blog",
+            "eyebrow": "published-only",
+            "heading": "Blog en préparation",
+            "meta": "aucun article public exporté",
+            "copy": "Les articles apparaîtront ici uniquement après une publication parallèle multilingue."
+          }
+        }
+      },
+      "resources": {
+        "translations": {
+          "it": {
+            "number": "07",
+            "path": "./resources",
+            "title": "Resources",
+            "eyebrow": "published-only",
+            "heading": "Risorse in preparazione",
+            "meta": "nessuna risorsa pubblica esportata",
+            "copy": "Link e file compariranno qui solo dopo una pubblicazione esplicita e multilingue."
+          },
+          "en": {
+            "number": "07",
+            "path": "./resources",
+            "title": "Resources",
+            "eyebrow": "published-only",
+            "heading": "Resources are being prepared",
+            "meta": "no public resource exported",
+            "copy": "Links and files will appear here only after an explicit multilingual publication."
+          },
+          "fr": {
+            "number": "07",
+            "path": "./resources",
+            "title": "Ressources",
+            "eyebrow": "published-only",
+            "heading": "Ressources en préparation",
+            "meta": "aucune ressource publique exportée",
+            "copy": "Les liens et fichiers apparaîtront ici uniquement après une publication multilingue explicite."
+          }
+        }
+      }
+    }
+  },
+  "resume": {
+    "id": "resume-main",
+    "type": "resume",
+    "status": "published",
+    "translations": {
+      "it": {
+        "htmlLang": "it",
+        "hero": {
+          "pretitle": "piacere, io sono",
+          "name": "Alessandro Sbarsi",
+          "title": "Codice chiaro per sistemi complessi, performance e conoscenza libera.",
+          "summary": "Vivo a Milano da una vita. Sono uno studente di Ingegneria Informatica al Politecnico di Milano e attualmente sviluppatore full stack freelance di software CRM/ERP: il mio obiettivo è progettare codice leggero e documentato, condividendo risorse utili con concretezza. Nel tempo libero mi piace approfondire progetti legati all'inferenza locale per poter contribuire alla comunità open source.",
+          "tags": [
+            "Milano",
+            "Ingegneria Informatica",
+            "Sviluppatore freelance"
+          ],
+          "actions": [
+            {
+              "label": "alessandro@sbar.si",
+              "href": "mailto:alessandro@sbar.si",
+              "action": "email",
+              "primary": true
+            },
+            {
+              "label": "Scarica resume PDF",
+              "href": "./files/alessandro-sbarsi-resume.pdf",
+              "download": true
+            },
+            {
+              "label": "LinkedIn",
+              "href": "https://www.linkedin.com/in/alessandro-sbarsi/"
+            },
+            {
+              "label": "GitHub",
+              "href": "https://github.com/ketchh"
+            }
+          ]
+        },
+        "facts": [
+          {
+            "label": "Base",
+            "value": "Milano, Lombardia, Italia"
+          },
+          {
+            "label": "Formazione (in corso)",
+            "value": "Laurea triennale in Ingegneria Informatica / Politecnico di Milano"
+          },
+          {
+            "label": "Esperienza attuale",
+            "value": "Aly Service / Sviluppatore / apr 2024 - presente"
+          },
+          {
+            "label": "Contatti",
+            "value": "alessandro@sbar.si / github.com/ketchh"
+          }
+        ],
+        "panels": [
+          {
+            "number": "02",
+            "path": "./experience",
+            "title": "Esperienze",
+            "kind": "entries",
+            "span": "wide",
+            "view": "resume",
+            "entries": [
+              {
+                "eyebrow": "current",
+                "heading": "Aly Service",
+                "meta": "aprile 2024 - Present / Sviluppatore / Milano",
+                "copy": "Sviluppo e implementazione di soluzioni Odoo customizzate, mirate all'automazione e all'ottimizzazione dei processi di business. Ruolo chiave nel guidare l'azienda attraverso una transizione tecnologica strategica, favorendo la trasformazione digitale."
+              },
+              {
+                "eyebrow": "previous",
+                "heading": "Al Confine",
+                "meta": "novembre 2022 - aprile 2024 / Cameriere / Bartender / Milano",
+                "copy": "Esperienza in sala e banco bar in un contesto a contatto con il pubblico, con focus su servizio al cliente, ritmo operativo, collaborazione con il team e qualita dell'esperienza."
+              }
+            ]
+          },
+          {
+            "number": "03",
+            "path": "./education",
+            "title": "Educazione",
+            "kind": "entries",
+            "view": "resume",
+            "entries": [
+              {
+                "eyebrow": "ongoing",
+                "heading": "Politecnico di Milano",
+                "meta": "settembre 2023 - dicembre 2028 / Laurea triennale, Ingegneria informatica",
+                "copy": "Percorso universitario in Ingegneria Informatica con focus su basi tecniche, progettazione di algoritmi, metodo ingegneristico e problem solving."
+              },
+              {
+                "eyebrow": "high school",
+                "heading": "Liceo Classico Cesare Beccaria",
+                "meta": "gennaio 2016 - giugno 2023 / Studente",
+                "copy": "Percorso liceale classico completato prima dell'ingresso al Politecnico di Milano."
+              }
+            ]
+          },
+          {
+            "number": "04",
+            "path": "./skills",
+            "title": "Competenze principali",
+            "kind": "list",
+            "view": "resume",
+            "bullets": [
+              "Python, JavaScript, SQL.",
+              "Git",
+              "Project Management"
+            ]
+          },
+          {
+            "number": "05",
+            "path": "./languages",
+            "title": "Lingue",
+            "kind": "list",
+            "view": "resume",
+            "bullets": [
+              "Italiano — Madrelingua.",
+              "Inglese — Professionale.",
+              "Francese — Lavoro limitato."
+            ]
+          },
+          {
+            "number": "08",
+            "path": "./contacts",
+            "title": "Contatti",
+            "kind": "contacts",
+            "view": "resume",
+            "items": [
+              {
+                "label": "Email",
+                "value": "alessandro@sbar.si",
+                "href": "mailto:alessandro@sbar.si"
+              },
+              {
+                "label": "LinkedIn",
+                "value": "alessandro-sbarsi",
+                "href": "https://www.linkedin.com/in/alessandro-sbarsi/"
+              },
+              {
+                "label": "GitHub",
+                "value": "github.com/ketchh",
+                "href": "https://github.com/ketchh"
+              }
+            ]
+          }
+        ]
+      },
+      "en": {
+        "htmlLang": "en",
+        "hero": {
+          "pretitle": "nice to meet you, I'm",
+          "name": "Alessandro Sbarsi",
+          "title": "Clear code for complex systems, performance, and open knowledge.",
+          "summary": "I have lived in Milan for most of my life. I am a Computer Engineering student at Politecnico di Milano and currently a freelance full stack CRM/ERP developer: my goal is to design lightweight, documented code while sharing useful resources in a concrete way. In my free time, I like to explore projects related to local inference so I can contribute to the open source community.",
+          "tags": [
+            "Milan",
+            "Computer Engineering",
+            "Freelance Developer"
+          ],
+          "actions": [
+            {
+              "label": "alessandro@sbar.si",
+              "href": "mailto:alessandro@sbar.si",
+              "action": "email",
+              "primary": true
+            },
+            {
+              "label": "Download resume PDF",
+              "href": "./files/alessandro-sbarsi-resume.pdf",
+              "download": true
+            },
+            {
+              "label": "LinkedIn",
+              "href": "https://www.linkedin.com/in/alessandro-sbarsi/"
+            },
+            {
+              "label": "GitHub",
+              "href": "https://github.com/ketchh"
+            }
+          ]
+        },
+        "facts": [
+          {
+            "label": "Base",
+            "value": "Milan, Lombardy, Italy"
+          },
+          {
+            "label": "Education (ongoing)",
+            "value": "Bachelor's degree in Computer Engineering / Politecnico di Milano"
+          },
+          {
+            "label": "Current experience",
+            "value": "Aly Service / Developer / Apr 2024 - present"
+          },
+          {
+            "label": "Contacts",
+            "value": "alessandro@sbar.si / github.com/ketchh"
+          }
+        ],
+        "panels": [
+          {
+            "number": "02",
+            "path": "./experience",
+            "title": "Experience",
+            "kind": "entries",
+            "span": "wide",
+            "view": "resume",
+            "entries": [
+              {
+                "eyebrow": "current",
+                "heading": "Aly Service",
+                "meta": "April 2024 - Present / Developer / Milan",
+                "copy": "Development and implementation of customized Odoo solutions aimed at automating and optimizing business processes. Key role in guiding the company through a strategic technological transition, supporting digital transformation."
+              },
+              {
+                "eyebrow": "previous",
+                "heading": "Al Confine",
+                "meta": "November 2022 - April 2024 / Waiter / Bartender / Milan",
+                "copy": "Front-of-house and bar experience in a people-facing environment, focused on customer service, operational rhythm, teamwork, and quality of the guest experience."
+              }
+            ]
+          },
+          {
+            "number": "03",
+            "path": "./education",
+            "title": "Education",
+            "kind": "entries",
+            "view": "resume",
+            "entries": [
+              {
+                "eyebrow": "ongoing",
+                "heading": "Politecnico di Milano",
+                "meta": "September 2023 - December 2028 / Bachelor's degree, Computer Engineering",
+                "copy": "University path in Computer Engineering focused on technical foundations, algorithm design, engineering method, and problem solving."
+              },
+              {
+                "eyebrow": "high school",
+                "heading": "Liceo Classico Cesare Beccaria",
+                "meta": "January 2016 - June 2023 / Student",
+                "copy": "Classical high school path completed before entering Politecnico di Milano."
+              }
+            ]
+          },
+          {
+            "number": "04",
+            "path": "./skills",
+            "title": "Main skills",
+            "kind": "list",
+            "view": "resume",
+            "bullets": [
+              "Python, JavaScript, SQL.",
+              "Git",
+              "Project Management"
+            ]
+          },
+          {
+            "number": "05",
+            "path": "./languages",
+            "title": "Languages",
+            "kind": "list",
+            "view": "resume",
+            "bullets": [
+              "Italian — Native.",
+              "English — Professional.",
+              "French — Limited working proficiency."
+            ]
+          },
+          {
+            "number": "08",
+            "path": "./contacts",
+            "title": "Contacts",
+            "kind": "contacts",
+            "view": "resume",
+            "items": [
+              {
+                "label": "Email",
+                "value": "alessandro@sbar.si",
+                "href": "mailto:alessandro@sbar.si"
+              },
+              {
+                "label": "LinkedIn",
+                "value": "alessandro-sbarsi",
+                "href": "https://www.linkedin.com/in/alessandro-sbarsi/"
+              },
+              {
+                "label": "GitHub",
+                "value": "github.com/ketchh",
+                "href": "https://github.com/ketchh"
+              }
+            ]
+          }
+        ]
+      },
+      "fr": {
+        "htmlLang": "fr",
+        "hero": {
+          "pretitle": "ravi de vous rencontrer, je suis",
+          "name": "Alessandro Sbarsi",
+          "title": "Code clair pour systèmes complexes, performance et connaissance ouverte.",
+          "summary": "Je vis à Milan depuis la majeure partie de ma vie. Je suis étudiant en ingénierie informatique au Politecnico di Milano et actuellement développeur full stack freelance pour des logiciels CRM/ERP : mon objectif est de concevoir du code léger et documenté tout en partageant des ressources utiles de façon concrète. Pendant mon temps libre, j'explore des projets liés à l'inférence locale afin de contribuer à la communauté open source.",
+          "tags": [
+            "Milan",
+            "Ingénierie informatique",
+            "Développeur freelance"
+          ],
+          "actions": [
+            {
+              "label": "alessandro@sbar.si",
+              "href": "mailto:alessandro@sbar.si",
+              "action": "email",
+              "primary": true
+            },
+            {
+              "label": "Télécharger le CV PDF",
+              "href": "./files/alessandro-sbarsi-resume.pdf",
+              "download": true
+            },
+            {
+              "label": "LinkedIn",
+              "href": "https://www.linkedin.com/in/alessandro-sbarsi/"
+            },
+            {
+              "label": "GitHub",
+              "href": "https://github.com/ketchh"
+            }
+          ]
+        },
+        "facts": [
+          {
+            "label": "Base",
+            "value": "Milan, Lombardie, Italie"
+          },
+          {
+            "label": "Formation (en cours)",
+            "value": "Licence en ingénierie informatique / Politecnico di Milano"
+          },
+          {
+            "label": "Expérience actuelle",
+            "value": "Aly Service / Développeur / avr. 2024 - présent"
+          },
+          {
+            "label": "Contacts",
+            "value": "alessandro@sbar.si / github.com/ketchh"
+          }
+        ],
+        "panels": [
+          {
+            "number": "02",
+            "path": "./experience",
+            "title": "Expériences",
+            "kind": "entries",
+            "span": "wide",
+            "view": "resume",
+            "entries": [
+              {
+                "eyebrow": "actuel",
+                "heading": "Aly Service",
+                "meta": "Avril 2024 - Présent / Développeur / Milan",
+                "copy": "Développement et mise en œuvre de solutions Odoo personnalisées visant à automatiser et optimiser les processus métier. Rôle clé dans l'accompagnement de l'entreprise au cours d'une transition technologique stratégique, en soutenant la transformation numérique."
+              },
+              {
+                "eyebrow": "précédent",
+                "heading": "Al Confine",
+                "meta": "Novembre 2022 - Avril 2024 / Serveur / Barman / Milan",
+                "copy": "Expérience en salle et au bar dans un contexte au contact du public, avec un focus sur le service client, le rythme opérationnel, la collaboration avec l'équipe et la qualité de l'expérience."
+              }
+            ]
+          },
+          {
+            "number": "03",
+            "path": "./education",
+            "title": "Formation",
+            "kind": "entries",
+            "view": "resume",
+            "entries": [
+              {
+                "eyebrow": "en cours",
+                "heading": "Politecnico di Milano",
+                "meta": "Septembre 2023 - Décembre 2028 / Licence, ingénierie informatique",
+                "copy": "Parcours universitaire en ingénierie informatique axé sur les bases techniques, la conception d'algorithmes, la méthode d'ingénierie et la résolution de problèmes."
+              },
+              {
+                "eyebrow": "lycée",
+                "heading": "Liceo Classico Cesare Beccaria",
+                "meta": "Janvier 2016 - Juin 2023 / Étudiant",
+                "copy": "Parcours de lycée classique terminé avant l'entrée au Politecnico di Milano."
+              }
+            ]
+          },
+          {
+            "number": "04",
+            "path": "./skills",
+            "title": "Compétences principales",
+            "kind": "list",
+            "view": "resume",
+            "bullets": [
+              "Python, JavaScript, SQL.",
+              "Git",
+              "Gestion de projet"
+            ]
+          },
+          {
+            "number": "05",
+            "path": "./languages",
+            "title": "Langues",
+            "kind": "list",
+            "view": "resume",
+            "bullets": [
+              "Italien — Langue maternelle.",
+              "Anglais — Professionnel.",
+              "Français — Capacité de travail limitée."
+            ]
+          },
+          {
+            "number": "08",
+            "path": "./contacts",
+            "title": "Contacts",
+            "kind": "contacts",
+            "view": "resume",
+            "items": [
+              {
+                "label": "Email",
+                "value": "alessandro@sbar.si",
+                "href": "mailto:alessandro@sbar.si"
+              },
+              {
+                "label": "LinkedIn",
+                "value": "alessandro-sbarsi",
+                "href": "https://www.linkedin.com/in/alessandro-sbarsi/"
+              },
+              {
+                "label": "GitHub",
+                "value": "github.com/ketchh",
+                "href": "https://github.com/ketchh"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "blogPosts": [],
+  "resources": []
+}

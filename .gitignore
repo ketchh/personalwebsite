@@ -1,0 +1,21 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs/temp
+*.log
+.tmp/
+tmp/
+*.mp4
+*.mov
+*.webm
+
+# Optional local assets that should not be published
+files/private/
+.gitnexus/
+
+# Planning/prototype workspace artifacts kept out of the clean repo
+.pantheon/
+.claude/

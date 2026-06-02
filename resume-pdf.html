@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alessandro Sbarsi — Resume</title>
+    <style>
+        @page { size: A4; margin: 10mm; }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            color: #111827;
+            background: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10.3pt;
+            line-height: 1.38;
+        }
+        a { color: #0f5f72; text-decoration: none; }
+        h1, h2, h3, p, ul { margin-top: 0; }
+        .page { width: 100%; }
+        .header {
+            display: table;
+            width: 100%;
+            padding-bottom: 11px;
+            border-bottom: 2px solid #111827;
+        }
+        .header-main, .header-side { display: table-cell; vertical-align: bottom; }
+        .header-main { width: 61%; }
+        .header-side {
+            width: 39%;
+            color: #4b5563;
+            font-size: 8.8pt;
+            line-height: 1.32;
+            text-align: right;
+        }
+        h1 {
+            margin-bottom: 5px;
+            color: #030712;
+            font-size: 25pt;
+            line-height: 1;
+            letter-spacing: -0.6pt;
+        }
+        .headline {
+            margin-bottom: 0;
+            color: #0f5f72;
+            font-weight: 700;
+        }
+        .layout {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            margin-top: 13px;
+        }
+        .main, .side { display: table-cell; vertical-align: top; }
+        .main { width: 67%; padding-right: 16px; }
+        .side { width: 33%; padding-left: 16px; border-left: 1px solid #d1d5db; }
+        section { margin-bottom: 12px; }
+        h2 {
+            margin-bottom: 7px;
+            padding-bottom: 3px;
+            color: #030712;
+            border-bottom: 1px solid #d1d5db;
+            font-size: 9.8pt;
+            letter-spacing: 1.2pt;
+            text-transform: uppercase;
+        }
+        h3 {
+            margin-bottom: 2px;
+            color: #111827;
+            font-size: 11pt;
+        }
+        .meta {
+            margin-bottom: 4px;
+            color: #6b7280;
+            font-size: 8.8pt;
+            font-weight: 700;
+        }
+        .entry { margin-bottom: 9px; break-inside: avoid; }
+        .entry p, .summary p { margin-bottom: 0; }
+        ul { margin-bottom: 0; padding-left: 15px; }
+        li { margin-bottom: 3px; }
+        .compact-list { padding-left: 0; list-style: none; }
+        .compact-list li { margin-bottom: 7px; }
+        .label {
+            display: block;
+            color: #6b7280;
+            font-size: 8.2pt;
+            font-weight: 700;
+            letter-spacing: 0.8pt;
+            text-transform: uppercase;
+        }
+        .pill-list { padding: 0; list-style: none; }
+        .pill-list li {
+            display: inline-block;
+            margin: 0 4px 6px 0;
+            padding: 4px 7px;
+            border: 1px solid #cbd5e1;
+            border-radius: 999px;
+            color: #111827;
+            font-size: 8.4pt;
+        }
+        .note { color: #6b7280; font-size: 8.4pt; }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <header class="header">
+            <div class="header-main">
+                <h1>Alessandro Sbarsi</h1>
+                <p class="headline">Clear code for complex systems, performance, and open knowledge.</p>
+            </div>
+            <div class="header-side">
+                <div>Milan, Lombardy, Italy</div>
+                <div><a href="mailto:alessandro@sbar.si">alessandro@sbar.si</a></div>
+                <div><a href="https://www.linkedin.com/in/alessandro-sbarsi/">linkedin.com/in/alessandro-sbarsi</a></div>
+                <div><a href="https://github.com/ketchh">github.com/ketchh</a></div>
+                <div><a href="https://sbar.si">sbar.si</a></div>
+            </div>
+        </header>
+
+        <div class="layout">
+            <div class="main">
+                <section class="summary">
+                    <h2>Profile</h2>
+                    <p>I have lived in Milan for most of my life. I am a Computer Engineering student at Politecnico di Milano and currently a freelance full stack CRM/ERP developer: my goal is to design lightweight, documented code while sharing useful resources in a concrete way. In my free time, I like to explore projects related to local inference so I can contribute to the open source community.</p>
+                </section>
+
+                <section>
+                    <h2>Experience</h2>
+                    <article class="entry">
+                        <h3>Aly Service</h3>
+                        <p class="meta">April 2024 - Present / Developer / Milan</p>
+                        <p>Development and implementation of customized Odoo solutions aimed at automating and optimizing business processes. Key role in guiding the company through a strategic technological transition, supporting digital transformation.</p>
+                    </article>
+
+                    <article class="entry">
+                        <h3>Al Confine</h3>
+                        <p class="meta">November 2022 - April 2024 / Waiter / Bartender / Milan</p>
+                        <p>Front-of-house and bar experience in a people-facing environment, focused on customer service, operational rhythm, teamwork, and quality of the guest experience.</p>
+                    </article>
+                </section>
+
+                <section>
+                    <h2>Education</h2>
+                    <article class="entry">
+                        <h3>Politecnico di Milano</h3>
+                        <p class="meta">September 2023 - December 2028 / Bachelor&#39;s degree, Computer Engineering</p>
+                        <p>University path in Computer Engineering focused on technical foundations, algorithm design, engineering method, and problem solving.</p>
+                    </article>
+                    <article class="entry">
+                        <h3>Liceo Classico Cesare Beccaria</h3>
+                        <p class="meta">January 2016 - June 2023 / Student</p>
+                        <p>Classical high school path completed before entering Politecnico di Milano.</p>
+                    </article>
+                </section>
+            </div>
+
+            <aside class="side">
+                <section>
+                    <h2>Summary</h2>
+                    <ul class="compact-list">
+                        <li><span class="label">Base</span>Milan, Lombardy, Italy</li>
+                        <li><span class="label">Education (ongoing)</span>Bachelor&#39;s degree in Computer Engineering / Politecnico di Milano</li>
+                        <li><span class="label">Current experience</span>Aly Service / Developer / Apr 2024 - present</li>
+                        <li><span class="label">Contacts</span>alessandro@sbar.si / github.com/ketchh</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Contacts</h2>
+                    <ul class="compact-list">
+                        <li><span class="label">Email</span><a href="mailto:alessandro@sbar.si">alessandro@sbar.si</a></li>
+                        <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/alessandro-sbarsi/">linkedin.com/in/alessandro-sbarsi</a></li>
+                        <li><span class="label">GitHub</span><a href="https://github.com/ketchh">github.com/ketchh</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Main skills</h2>
+                    <ul class="pill-list">
+                        <li>Python, JavaScript, SQL.</li>
+                        <li>Git</li>
+                        <li>Project Management</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Languages</h2>
+                    <ul class="compact-list">
+                        <li>Italian &mdash; Native.</li>
+                        <li>English &mdash; Professional.</li>
+                        <li>French &mdash; Limited working proficiency.</li>
+                    </ul>
+                </section>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>

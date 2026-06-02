@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <meta
+        name="description"
+        content="Sito personale di Alessandro Sbarsi: resume, blog e risorse in stile terminale evoluto, multilingue e senza dipendenze esterne."
+    >
+    <title>Alessandro Sbarsi | sbar.si</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-current-section="home">
+    <script>
+        (function () {
+            const hash = window.location.hash.replace(/^#\/?/, "").split("/")[0];
+            const section = hash === "resume" || hash === "blog" || hash === "resources" ? hash : "home";
+
+            document.body.dataset.currentSection = section;
+            document.body.setAttribute("data-current-section", section);
+        }());
+    </script>
+    <section class="site-intro" id="site-intro" aria-label="sbar.si intro" data-section-accent="home">
+        <div class="site-intro-inner">
+            <div class="site-intro-stack">
+                <h1 class="site-intro-title"><span id="site-intro-prefix">hello</span><span id="site-intro-typing"></span><span class="intro-cursor" aria-hidden="true"></span></h1>
+                <p class="intro-hint" id="intro-hint">Cosa ti porta qui?</p>
+                <div class="intro-choices" id="intro-choices" aria-label="Choose a section">
+                    <a href="#/resume" data-section-choice="resume"><span>01</span><strong>Curriculum</strong></a>
+                    <a href="#/blog" data-section-choice="blog"><span>02</span><strong>Blog</strong></a>
+                    <a href="#/resources" data-section-choice="resources"><span>03</span><strong>Risorse</strong></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="shell" id="resume-shell" data-current-section="home" data-section-accent="home" data-patch-scope="page" data-patch-state="idle">
+        <header class="topbar">
+            <div class="topbar-main">
+                <div class="brand">
+                    <div class="brand-mark" aria-hidden="true">&gt;</div>
+                    <div>
+                        <p class="brand-title">sbar.si</p>
+                    </div>
+                </div>
+
+                <div class="control-cluster">
+                    <div class="language-picker" data-language-picker>
+                        <p class="language-status" id="language-status" role="status" aria-live="polite" aria-atomic="true">language it ready / idle</p>
+                        <p class="language-popup" id="language-popup" data-language-popup hidden aria-hidden="true"></p>
+                        <button class="language-globe" id="language-globe" type="button" data-language-globe data-patch-state="idle" aria-label="Scegli lingua" aria-haspopup="menu" aria-expanded="false" aria-controls="language-menu">
+                            <span class="language-globe-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <path d="M3 12h18"></path>
+                                    <path d="M12 3c2.25 2.45 3.35 5.45 3.35 9S14.25 18.55 12 21"></path>
+                                    <path d="M12 3C9.75 5.45 8.65 8.45 8.65 12s1.1 6.55 3.35 9"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="language-menu" id="language-menu" data-language-menu role="menu" aria-label="Scegli lingua" hidden>
+                            <button class="language-option" type="button" data-language-option data-lang="it" role="menuitemradio" aria-checked="true">Italiano <span>IT</span></button>
+                            <button class="language-option" type="button" data-language-option data-lang="en" role="menuitemradio" aria-checked="false">English <span>EN</span></button>
+                            <button class="language-option" type="button" data-language-option data-lang="fr" role="menuitemradio" aria-checked="false">Français <span>FR</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="shell-nav" data-shell-nav="sections" aria-label="Primary sections">
+                <a class="shell-nav-link" href="#/resume" data-section="resume" data-patch-key="shell-nav-resume-label">Curriculum</a>
+                <a class="shell-nav-link" href="#/blog" data-section="blog" data-patch-key="shell-nav-blog-label">Blog</a>
+                <a class="shell-nav-link" href="#/resources" data-section="resources" data-patch-key="shell-nav-resources-label">Risorse</a>
+            </nav>
+        </header>
+
+        <main id="resume-app" class="resume-grid" data-current-section="home" aria-live="polite"></main>
+    </div>
+
+    <script src="config.js?v=20260601-3"></script>
+    <script type="module" src="script.js?v=20260601-3"></script>
+</body>
+</html>
